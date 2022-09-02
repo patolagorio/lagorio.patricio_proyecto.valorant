@@ -1,0 +1,74 @@
+.letrascolor{
+    color:brown;
+    font-family: valorant;
+    
+}
+
+@font-face{
+    font-family: valorant;
+    src: url(../fonts/Valorant\ Font.ttf);
+}
+
+header {
+font-family: valorant;
+}
+
+footer {
+    font-family: valorant;
+}
+
+/*variables*/
+$anchurita: 100%;
+$alturin: 350px;
+
+/*extend*/
+
+
+.li-deco{
+    font-size: 1.5rem;
+    text-decoration:dotted;
+    color: white;
+    padding-bottom: 0px;
+    
+}
+
+.li-deco-red{
+    @extend .li-deco;
+    color: red;
+    padding-bottom: 12px;
+}
+
+.li-deco-redtbf{
+    @extend .li-deco;
+    color: firebrick;
+    padding-bottom: 12px;
+}
+
+.li-deco-redred{
+    @extend .li-deco;
+    color: rgb(199, 163, 163);
+    padding-bottom: 12px;
+}
+
+/*mixin*/
+
+@mixin tamaño($anchurita, $alturin) {
+    width: $anchurita;
+    height: $alturin;
+}
+
+footer {
+    @include tamaño($anchurita, 170px);
+}
+
+/*each*/
+
+@each $secciones in body, header, main{
+
+    #{$secciones}{
+    background: #6a0000;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #670202, #000000);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #670202, #000000); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+         
+    }
+}

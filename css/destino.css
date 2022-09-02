@@ -1,0 +1,67 @@
+.letrascolor {
+  color: brown;
+  font-family: valorant;
+}
+
+@font-face {
+  font-family: valorant;
+  src: url(../fonts/Valorant\ Font.ttf);
+}
+header {
+  font-family: valorant;
+}
+
+footer {
+  font-family: valorant;
+}
+
+/*variables*/
+/*extend*/
+.li-deco, .li-deco-redred, .li-deco-redtbf, .li-deco-red {
+  font-size: 1.5rem;
+  text-decoration: dotted;
+  color: white;
+  padding-bottom: 0px;
+}
+
+.li-deco-red {
+  color: red;
+  padding-bottom: 12px;
+}
+
+.li-deco-redtbf {
+  color: firebrick;
+  padding-bottom: 12px;
+}
+
+.li-deco-redred {
+  color: rgb(199, 163, 163);
+  padding-bottom: 12px;
+}
+
+/*mixin*/
+footer {
+  width: 100%;
+  height: 170px;
+}
+
+/*each*/
+body {
+  background: #6a0000; /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #670202, #000000); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #670202, #000000); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+header {
+  background: #6a0000; /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #670202, #000000); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #670202, #000000); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+main {
+  background: #6a0000; /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #670202, #000000); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #670202, #000000); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+/*# sourceMappingURL=destino.css.map */

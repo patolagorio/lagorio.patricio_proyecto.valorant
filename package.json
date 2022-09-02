@@ -1,0 +1,22 @@
+{
+  "name": "proyecto_valorant",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build-css": "node-sass --include-path scss scss/origen.scss css/destino.css",
+"watch-css":"nodemon -e scss -x \"npm run build-css\""
+
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/patolagorio/lagorio.patricio_proyecto.valorant.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/patolagorio/lagorio.patricio_proyecto.valorant/issues"
+  },
+  "homepage": "https://github.com/patolagorio/lagorio.patricio_proyecto.valorant#readme"
+}
